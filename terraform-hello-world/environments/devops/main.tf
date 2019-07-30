@@ -19,7 +19,6 @@ provider "aws" {
   tags = {
     Name = "terraform-hello-world"
   }
-}
 
 data "template_file" "userdata" {
   template = "${file("${path.module}/templates/userdata.sh.tpl")}"
