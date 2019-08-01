@@ -1,4 +1,3 @@
-module "main" {
   module "aws_eip" {
     source = "../../resources/aws_eip"
   }
@@ -28,5 +27,3 @@ module "main" {
   module "aws_vpc" {
     source = "../../resources/aws_vpc"
   }
-}
-
